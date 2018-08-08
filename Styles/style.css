@@ -1,0 +1,9 @@
+header {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1.5em;
+    margin: 0 auto;
+    width: 100%;
+    background: #61c5ff;
+    position: absolute;
+}

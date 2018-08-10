@@ -16,10 +16,17 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   res.render("index.hbs", {
-    pageTitle: "Algorithms",
+    pageTitle: "My relationship with JavaScript",
     currentYear: new Date().getFullYear(),
-    testTemplate: "Just testing to make sure handlebars is up and running!"
   });
 });
+
+app.get('/challenges', (req, res) => {
+  res.render('challenges.hbs');
+})
+
+app.get('/contact', (req, res) => {
+  res.render('contact.hbs');
+})
 
 app.listen(3000, () => console.log("app running on port 3000!"));

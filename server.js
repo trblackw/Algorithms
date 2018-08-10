@@ -2,6 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 
 const app = express();
+hbs.registerPartials(__dirname + "/views/partials");
 
 app.set("view engine", "hbs");
 app.use(express.static(__dirname + "/public"));
@@ -17,7 +18,7 @@ app.get("/", (req, res) => {
   res.render("index.hbs", {
     pageTitle: "Algorithms",
     currentYear: new Date().getFullYear(),
-    testTemplate: "Just testing to make sure handlebars is up and running!",
+    testTemplate: "Just testing to make sure handlebars is up and running!"
   });
 });
 

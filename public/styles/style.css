@@ -59,14 +59,36 @@ a {
 }
 
 .main-nav a:hover {
-  color: hsl(0, 61%, 50%);
-  border-bottom: 1px solid black;
+  /* text-decoration: underline;
+  text-decoration-color:hsl(0, 61%, 50%); */
+  text-shadow: 1px 1px hsl(0, 61%, 50%);
+  /* position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; */
 }
 
 /* ABOUT (INDEX.HBS)*/
+.container {
+  margin: 1.5em;
+  padding: 1em;
+}
 
 #aboutTitle {
   font-family: "Josefin Sans", sans-serif;
+}
+
+/* FOOTER */
+footer {
+  background: hsl(0, 0%, 22%);
+  color: whitesmoke;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /* ================================= 

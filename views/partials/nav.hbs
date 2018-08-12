@@ -1,9 +1,41 @@
-<nav role="navigation">
-		<h1 class="logo"><a href="#">Algorithms.<small>js</small></a></h1>
-      <ul class="main-nav">
-          <li><a href="/challenges">Challenges</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="/contact">Contact</a></li>
-      </ul>
-	</nav> 
+<nav class="navbar">
+    <span id="navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+    <a href="#" id="logo">Algorithms.js</a>
+    <ul id="main-nav">
+        <li>
+            <a href="#" class="nav-links">Home</a>
+        </li>
+        <li>
+            <a href="/challenges" class="nav-links">Challenges</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">About</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Portfolio</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    let mainNav = document.getElementById('main-nav');
+    let navbarToggle = document.getElementById('navbar-toggle');
+
+    navbarToggle.addEventListener('click', function () {
+
+        if (this.classList.contains('active')) {
+            mainNav.style.display = "none";
+            this.classList.remove('active');
+        }
+        else {
+            mainNav.style.display = "flex";
+            this.classList.add('active');
+
+        }
+    });
+</script>
